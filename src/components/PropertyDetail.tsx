@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, MapPin, BedDouble, Square, Check, Play, Phone, Mail, User } from 'lucide-react';
+import { X, MapPin, BedDouble, Square, Check, Play, Phone, Mail, User, Globe } from 'lucide-react';
 import { Property } from '../data/properties';
 import EMICalculator from './EMICalculator';
 
@@ -190,7 +190,10 @@ export default function PropertyDetail({ property, onClose }: PropertyDetailProp
                   <h3 className="text-2xl font-serif font-semibold mb-2">Interested?</h3>
                   <p className="text-gray-400 text-sm mb-8">Schedule a private viewing or request more details.</p>
                   
-                  <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                  <form className="space-y-5" onSubmit={(e) => {
+                    e.preventDefault();
+                    window.location.href = `mailto:vickyykumar14@gmail.com?subject=Inquiry about ${property.title}`;
+                  }}>
                     <div className="relative">
                       <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                       <input 
@@ -233,9 +236,20 @@ export default function PropertyDetail({ property, onClose }: PropertyDetailProp
                     className="w-16 h-16 rounded-full object-cover"
                   />
                   <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-1">Listing Agent</p>
-                    <h4 className="text-lg font-serif font-semibold text-[var(--color-navy)]">James Sterling</h4>
-                    <p className="text-sm text-[var(--color-gold)] font-medium">PropView Luxury</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-1">Listing Agent / Dealer</p>
+                    <h4 className="text-lg font-serif font-semibold text-[var(--color-navy)]">Vicky Kumar</h4>
+                    <p className="text-sm text-[var(--color-gold)] font-medium mb-2">PropView Demo Dealer</p>
+                    <div className="flex flex-col gap-1 text-sm text-gray-600">
+                      <a href="tel:+918102099678" className="flex items-center gap-2 hover:text-[var(--color-navy)] transition-colors">
+                        <Phone className="w-4 h-4" /> +91 8102099678
+                      </a>
+                      <a href="mailto:vickyykumar14@gmail.com" className="flex items-center gap-2 hover:text-[var(--color-navy)] transition-colors">
+                        <Mail className="w-4 h-4" /> vickyykumar14@gmail.com
+                      </a>
+                      <a href="https://vickyiitp.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[var(--color-navy)] transition-colors">
+                        <Globe className="w-4 h-4" /> vickyiitp.tech
+                      </a>
+                    </div>
                   </div>
                 </div>
 

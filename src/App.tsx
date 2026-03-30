@@ -69,9 +69,9 @@ export default function App() {
             <a href="#contact" className="hover:text-[var(--color-gold)] transition-colors">Contact</a>
           </div>
           
-          <button className="hidden md:block bg-[var(--color-navy)] hover:bg-[var(--color-navy-light)] text-white px-6 py-2.5 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors">
-            List Property
-          </button>
+          <a href="mailto:vickyykumar14@gmail.com" className="hidden md:block bg-[var(--color-navy)] hover:bg-[var(--color-navy-light)] text-white px-6 py-2.5 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors text-center">
+            Contact Dealer
+          </a>
 
           {/* Mobile Menu Toggle */}
           <button 
@@ -96,9 +96,9 @@ export default function App() {
                 <a href="#expertise" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[var(--color-gold)] transition-colors">Expertise</a>
                 <a href="#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[var(--color-gold)] transition-colors">Testimonials</a>
                 <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[var(--color-gold)] transition-colors">Contact</a>
-                <button className="bg-[var(--color-navy)] text-white px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors mt-2 w-full">
-                  List Property
-                </button>
+                <a href="mailto:vickyykumar14@gmail.com" className="bg-[var(--color-navy)] text-white px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors mt-2 w-full text-center block">
+                  Contact Dealer
+                </a>
               </div>
             </motion.div>
           )}
@@ -347,16 +347,16 @@ export default function App() {
             <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-gold)] mb-6">Contact</h4>
             <ul className="space-y-4 text-gray-400">
               <li className="flex items-start gap-3">
-                <span className="text-[var(--color-gold)] mt-1">T:</span> 
-                <a href="tel:1800PROPVIEW" className="hover:text-white transition-colors">1-800-PROPVIEW</a>
+                <span className="text-[var(--color-gold)] mt-1">T:</span>
+                <a href="tel:+918102099678" className="hover:text-white transition-colors">+91 8102099678</a>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[var(--color-gold)] mt-1">E:</span> 
-                <a href="mailto:concierge@propview.com" className="hover:text-white transition-colors">concierge@propview.com</a>
+                <span className="text-[var(--color-gold)] mt-1">E:</span>
+                <a href="mailto:vickyykumar14@gmail.com" className="hover:text-white transition-colors">vickyykumar14@gmail.com</a>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[var(--color-gold)] mt-1">A:</span> 
-                <span>123 Luxury Avenue, Suite 100<br/>New York, NY 10022</span>
+                <span className="text-[var(--color-gold)] mt-1">W:</span>
+                <a href="https://vickyiitp.tech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">vickyiitp.tech</a>
               </li>
             </ul>
           </div>
